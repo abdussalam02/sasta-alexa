@@ -1,13 +1,17 @@
-# Importing all the required modules
+# importing all the required modules
+from ecapture import ecapture as ec
 import speech_recognition as sr
-import pyttsx3
-import pywhatkit
 import datetime as dt
 import wikipedia as wk
+import smtplib
+import wolframalpha
 import pyjokes
+import pyttsx3
+import pywhatkit
+import time
+import webbrowser
+import subprocess
+import json
+import requests
+import os
 
-# defining variables
-listener = sr.Recognizer()
-engine = pyttsx3.init()
-voices = engine.getProperty('voices')
-engine.setProperty('voice',voices[1].id)
